@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css';
 import Car from './Car/Car'
 
+
 class App extends React.Component {
 
     state = {
@@ -69,8 +70,13 @@ class App extends React.Component {
                     onClick={this.toggleCarsHandler}>
                     Toggle Cars
                 </button>
-
-                { cars }
+                <div style={{
+                    width: 400,
+                    margin: 'auto',
+                    paddingTop: '20px'
+                }}>
+                    { cars }
+                </div>
             </div>
         );
         // return React.createElement(
